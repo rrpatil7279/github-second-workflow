@@ -1,8 +1,8 @@
 name: information output
 on: workflow_dispatch
 jobs:
-  test:
+  information:
     runs-on: ubuntu-latest
     steps:
-      - name: Get code
+      - name: Get GitHub information
         run: echo "${{toJSON(github)}}"
